@@ -22,17 +22,6 @@
         
     
   
-    
-        ,"post2": {
-            "title": "My Resume",
-            "content": "EDUCATION . Fei Tian College—Middletown, NY Graduating: May 2022 . Bachelor of Science in Data Science Cumulative GPA: 3.91/4.00 . Two-time winner of the Provost’s Outstanding Student Award . | Three-time winner of the Academic Excellence Award . | . Thomas Kelly High School, Chicago, IL June 2018 . Received: The Seal of Biliteracy—English and Mandarin Unweighted GPA: 3.90/4.00 . COURSES . Data Mining, Statistical Computing and Graphics, Database, Cloud Computing and Big Data, Data Structure Algorithms, Linear Regression, Statistical Theory and Method, Business Data Analytics, Microeconomics . PROJECTS . Data Science Project with AWS EC2 and RDS Feb 2020–Aug 2020 . Created a comprehensive system flight booking system with a MySQL database backend to store user login, flight information, and booking data . | Used Python flask and HTML, ran on Amazon EC2, created a user-friendly front-end UI . | . Coronavirus Tracker (Tableau) May 2020–Aug 2020 . Developed an interactive animated Tableau time series analysis dashboard with waterfall charts, line charts, and maps to visualize COVID-19 spreads within the U.S. and globally . | Data manipulation in Excel using advanced formulas (VLOOKUP, Index match, pivot table) . | . Data Analysis in R Project Lead Sep 2019–Dec 2019 . Spearheaded linear regression to forecast SAT score and correlation analysis using the time spent studying and GPA . | Performed data manipulation, data cleaning, normalization, and prescriptive analytics . | . EXPERIENCE . Arc’teryx, Central Valley, NY May 2019–Present . Product Guide . Results-oriented and increase 30% sales revenue and 35% customer service by leveraging my communication, bilingual literacy and by analyzing foot traffic at the mall  | . Managing large amounts of incoming calls and follow company escalation policy . | Identifying causes of customer problems and complaints with the best solution . | . SKILLS . Advanced programming skills in MySQL, Python, Java, and HTML . | Data analysis and visualization in R ggplot, Tableau, Python Matplotlib and Pandas . | Advanced Proficiency in Microsoft Office, Excel, PowerPoint and Word. . | Strong negotiation, financial analytical skill, qualitative and quantitative research skills . | Project management, public relations, teamwork, detail oriented, professionalism, social skill . | .",
-            "url": "https://shudi-zhao.github.io/My_Data_Science_Blog/2020/01/28/My-Resume.html",
-            "relUrl": "/2020/01/28/My-Resume.html",
-            "date": " • Jan 28, 2020"
-        }
-        
-    
-  
 
   
   
