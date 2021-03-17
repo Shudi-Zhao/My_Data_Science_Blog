@@ -4,19 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Introduction | Shudi’s Data Science Blog</title>
+<title>Stock Price Prediction using Python | Shudi’s Data Science Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Introduction" />
+<meta property="og:title" content="Stock Price Prediction using Python" />
+<meta name="author" content="Shudi Zhao" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://shudi-zhao.github.io/My_Data_Science_Blog/2021/03/17/Stock-Prediction.html" />
-<meta property="og:url" content="https://shudi-zhao.github.io/My_Data_Science_Blog/2021/03/17/Stock-Prediction.html" />
+<meta name="description" content="A step by step tutorial to predict the stock price of the most active stock using selenium &amp; machine learning." />
+<meta property="og:description" content="A step by step tutorial to predict the stock price of the most active stock using selenium &amp; machine learning." />
+<link rel="canonical" href="https://shudi-zhao.github.io/My_Data_Science_Blog/machine%20learning/python/selenium/stock/2021/03/17/Stock-Prediction.html" />
+<meta property="og:url" content="https://shudi-zhao.github.io/My_Data_Science_Blog/machine%20learning/python/selenium/stock/2021/03/17/Stock-Prediction.html" />
 <meta property="og:site_name" content="Shudi’s Data Science Blog" />
+<meta property="og:image" content="https://shudi-zhao.github.io/My_Data_Science_Blog/images" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-03-17T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://shudi-zhao.github.io/My_Data_Science_Blog/2021/03/17/Stock-Prediction.html","@type":"BlogPosting","headline":"Introduction","dateModified":"2021-03-17T00:00:00-05:00","datePublished":"2021-03-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://shudi-zhao.github.io/My_Data_Science_Blog/2021/03/17/Stock-Prediction.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"url":"https://shudi-zhao.github.io/My_Data_Science_Blog/machine%20learning/python/selenium/stock/2021/03/17/Stock-Prediction.html","@type":"BlogPosting","headline":"Stock Price Prediction using Python","dateModified":"2021-03-17T00:00:00-05:00","datePublished":"2021-03-17T00:00:00-05:00","image":"https://shudi-zhao.github.io/My_Data_Science_Blog/images","mainEntityOfPage":{"@type":"WebPage","@id":"https://shudi-zhao.github.io/My_Data_Science_Blog/machine%20learning/python/selenium/stock/2021/03/17/Stock-Prediction.html"},"author":{"@type":"Person","name":"Shudi Zhao"},"description":"A step by step tutorial to predict the stock price of the most active stock using selenium &amp; machine learning.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/My_Data_Science_Blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shudi-zhao.github.io/My_Data_Science_Blog/feed.xml" title="Shudi's Data Science Blog" /><link rel="shortcut icon" type="image/x-icon" href="/My_Data_Science_Blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,16 +73,34 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Introduction</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-17T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Stock Price Prediction using Python</h1><p class="page-description">A step by step tutorial to predict the stock price of the most active stock using selenium & machine learning.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-17T00:00:00-05:00" itemprop="datePublished">
         Mar 17, 2021
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Shudi Zhao</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/My_Data_Science_Blog/categories/#Machine Learning">Machine Learning</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/My_Data_Science_Blog/categories/#Python">Python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/My_Data_Science_Blog/categories/#Selenium">Selenium</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/My_Data_Science_Blog/categories/#Stock">Stock</a>
+        
+      
+      </p>
     
 
     
@@ -117,6 +137,14 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1><p>In this tutorial, I will guide you throught how to predict the stock price of the most active stock based on the historical data.</p>
+<p>Before we start, let me give you some basic ideal. First, we are going to use selenim for web scraping. We need to get the name of the most active stock of the day on yahoo finance. Selenium is a hot tool not only in web scraping but also in automated web application test. If you haven't use selenium before, I recomend you to watch this fantanstic youtube <a href="https://www.youtube.com/watch?v=Xjv1sY630Uc">selenium tutorial</a> to set up selenium. And use this <a href="https://www.geeksforgeeks.org/selenium-python-tutorial/">selenium python tutorial</a> as more detailed reference. Then, we will get the historical data of that most active stock. Next, we will perform some prediction tasks using machine simple learning models. Finally, we can send our predictions to our clients by email.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Prerequisites">Prerequisites<a class="anchor-link" href="#Prerequisites"> </a></h1><p>First, we need to import the necessary packages. Make sure you have installed all the packages below:</p>
@@ -519,7 +547,15 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 
 
-  </div><a class="u-url" href="/My_Data_Science_Blog/2021/03/17/Stock-Prediction.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Shudi-Zhao/My_Data_Science_Blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/My_Data_Science_Blog/machine%20learning/python/selenium/stock/2021/03/17/Stock-Prediction.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
