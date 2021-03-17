@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+![](images/logo.png)
+
 **Shudi Zhao**
 
 - Data Science Students
