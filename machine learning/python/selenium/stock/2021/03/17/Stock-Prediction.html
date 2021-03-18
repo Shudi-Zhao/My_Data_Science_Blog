@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      8 min read
     
 </span></p>
 
@@ -140,7 +140,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1><p>In this tutorial, I will guide you throught how to predict the stock price of the most active stock based on the historical data.</p>
-<p>Before we start, let me give you some basic ideal. First, we are going to use selenim for web scraping. We need to get the name of the most active stock of the day on yahoo finance. Selenium is a hot tool not only in web scraping but also in automated web application test. If you haven't use selenium before, I recomend you to watch this fantanstic youtube <a href="https://www.youtube.com/watch?v=Xjv1sY630Uc">selenium tutorial</a> to set up selenium. And use this <a href="https://www.geeksforgeeks.org/selenium-python-tutorial/">selenium python tutorial</a> as more detailed reference. Then, we will get the historical data of that most active stock. Next, we will perform some prediction tasks using machine simple learning models. Finally, we can send our predictions to our clients by email.</p>
+<p>Before we start, let me give you some basic ideal. First, we are going to use selenium for web scraping. We need to get the name of the most active stock on yahoo finance. Selenium is a hot tool not only in web scraping but also in automated web application test. If you haven't use selenium before, I recommend you to watch this fantanstic youtube <a href="https://www.youtube.com/watch?v=Xjv1sY630Uc">selenium tutorial</a> to set up selenium. And use this <a href="https://www.geeksforgeeks.org/selenium-python-tutorial/">selenium python tutorial</a> as more detailed reference. Then, we will get the historical data of that most active stock. Next, we will perform some prediction tasks using machine simple learning models. Finally, we can send our predictions to our clients by email.</p>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, copy the xpath following the following instruction:</p>
+<p>Next, copy the xpath following the instruction below:</p>
 
 </div>
 </div>
@@ -373,8 +373,8 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, we can get the historical data for the most active stock. Inside the get_historical_data(), you will need to set the start and end date, the output format(we will use pandas in this project).</p>
-<p>For the token, you will need to visit <a href="https://iexcloud.io/cloud-login#/register">iexcloud</a> to create an account to get your API token. You can choose the free version, but it only offers you a very limided access.</p>
+<p>Now, we can get the historical data for the most active stock. Inside the get_historical_data(), you will need to set the start and end date, the output format (we will use pandas in this project).</p>
+<p>For the token, you will need to visit <a href="https://iexcloud.io/cloud-login#/register">iexcloud</a> to create an account to get your API token. You can choose the free version, but it only offers you a very limited access.</p>
 <p>Last, we will save the historical data into a csv file.</p>
 
 </div>
@@ -405,7 +405,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You dataframe should look like this:</p>
+<p>Your dataframe should look like this:</p>
 
 </div>
 </div>
@@ -583,153 +583,9 @@ window.onload = wrap_img;
       <td>-0.12</td>
       <td>-0.0828</td>
     </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>247</td>
-      <td>2021-02-23</td>
-      <td>1.26</td>
-      <td>1.330</td>
-      <td>1.10</td>
-      <td>1.29</td>
-      <td>SNDL</td>
-      <td>397249358</td>
-      <td>HISTORICAL_PRICES</td>
-      <td>SNDL</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>1.10</td>
-      <td>397249358</td>
-      <td>1.29</td>
-      <td>1.26</td>
-      <td>1.330</td>
-      <td>1.10</td>
-      <td>397249358</td>
-      <td>Feb 23, 21</td>
-      <td>-0.17</td>
-      <td>-0.1189</td>
-    </tr>
-    <tr>
-      <td>248</td>
-      <td>2021-02-24</td>
-      <td>1.45</td>
-      <td>1.470</td>
-      <td>1.28</td>
-      <td>1.32</td>
-      <td>SNDL</td>
-      <td>433296256</td>
-      <td>HISTORICAL_PRICES</td>
-      <td>SNDL</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>1.28</td>
-      <td>433296256</td>
-      <td>1.32</td>
-      <td>1.45</td>
-      <td>1.470</td>
-      <td>1.28</td>
-      <td>433296256</td>
-      <td>Feb 24, 21</td>
-      <td>0.19</td>
-      <td>0.1508</td>
-    </tr>
-    <tr>
-      <td>249</td>
-      <td>2021-02-25</td>
-      <td>1.37</td>
-      <td>1.640</td>
-      <td>1.36</td>
-      <td>1.54</td>
-      <td>SNDL</td>
-      <td>391487356</td>
-      <td>HISTORICAL_PRICES</td>
-      <td>SNDL</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>1.36</td>
-      <td>391487356</td>
-      <td>1.54</td>
-      <td>1.37</td>
-      <td>1.640</td>
-      <td>1.36</td>
-      <td>391487356</td>
-      <td>Feb 25, 21</td>
-      <td>-0.08</td>
-      <td>-0.0552</td>
-    </tr>
-    <tr>
-      <td>250</td>
-      <td>2021-02-26</td>
-      <td>1.33</td>
-      <td>1.490</td>
-      <td>1.31</td>
-      <td>1.39</td>
-      <td>SNDL</td>
-      <td>255416545</td>
-      <td>HISTORICAL_PRICES</td>
-      <td>SNDL</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>1.31</td>
-      <td>255416545</td>
-      <td>1.39</td>
-      <td>1.33</td>
-      <td>1.490</td>
-      <td>1.31</td>
-      <td>255416545</td>
-      <td>Feb 26, 21</td>
-      <td>-0.04</td>
-      <td>-0.0292</td>
-    </tr>
-    <tr>
-      <td>251</td>
-      <td>2021-03-01</td>
-      <td>1.35</td>
-      <td>1.440</td>
-      <td>1.33</td>
-      <td>1.41</td>
-      <td>SNDL</td>
-      <td>237436937</td>
-      <td>HISTORICAL_PRICES</td>
-      <td>SNDL</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>1.33</td>
-      <td>237436937</td>
-      <td>1.41</td>
-      <td>1.35</td>
-      <td>1.440</td>
-      <td>1.33</td>
-      <td>237436937</td>
-      <td>Mar 1, 21</td>
-      <td>0.02</td>
-      <td>0.0150</td>
-    </tr>
   </tbody>
 </table>
-<p>252 rows × 26 columns</p>
+<p>5 rows × 26 columns</p>
 </div>
 </div>
 
@@ -998,7 +854,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Last, we can write a function to send result to our clients. The smtplib module allowed up to send emails to any internet machine with an SMTP. Check more details for <a href="https://docs.python.org/3/library/smtplib.html">SMTP</a>.</p>
+<p>Last, we can write a function to send result to our clients. The smtplib module allowed you to send emails to any internet machine with an SMTP. Check more details for <a href="https://docs.python.org/3/library/smtplib.html">SMTP</a>.</p>
 
 </div>
 </div>
